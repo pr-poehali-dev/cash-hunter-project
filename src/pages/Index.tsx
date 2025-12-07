@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 import { Input } from '@/components/ui/input';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import HuntMap from '@/components/HuntMap';
 
 type Section = 'home' | 'hunt' | 'leaderboard' | 'profile' | 'register';
 
@@ -228,12 +229,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="bg-muted/50 rounded-xl aspect-video flex items-center justify-center">
-            <div className="text-center space-y-3">
-              <Icon name="Map" size={64} className="mx-auto text-muted-foreground" />
-              <p className="text-muted-foreground">Интерактивная карта с вашей позицией</p>
-            </div>
-          </div>
+          <HuntMap />
 
           <div className="grid md:grid-cols-3 gap-4">
             <Card className="p-4 bg-card/50 border-border">

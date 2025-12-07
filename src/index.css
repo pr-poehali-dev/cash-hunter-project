@@ -94,4 +94,53 @@
       box-shadow: 0 0 40px rgba(249, 115, 22, 0.8);
     }
   }
+
+  .hunter-pulse {
+    animation: hunter-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes hunter-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+  }
+
+  .treasure-glow {
+    animation: treasure-glow 3s ease-in-out infinite;
+  }
+
+  @keyframes treasure-glow {
+    0%,
+    100% {
+      box-shadow:
+        0 0 30px rgba(249, 115, 22, 0.8),
+        0 0 60px rgba(249, 115, 22, 0.4);
+    }
+    50% {
+      box-shadow:
+        0 0 50px rgba(249, 115, 22, 1),
+        0 0 100px rgba(249, 115, 22, 0.6);
+    }
+  }
+
+  .proximity-ring {
+    animation: proximity-ring 2s ease-out infinite;
+  }
+
+  @keyframes proximity-ring {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
 }
